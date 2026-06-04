@@ -1,0 +1,52 @@
+/* استایل لینک‌های اجتماعی */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon img {
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) invert(1); /* آیکون‌ها را سفید می‌کند */
+    opacity: 0.7;
+}
+
+/* افکت هاور (وقتی موس روی آن‌ها می‌رود) */
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* درخشش مخصوص اینستاگرام */
+.social-icon.insta:hover {
+    border-color: #E1306C;
+    box-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
+}
+.social-icon.insta:hover img {
+    filter: none; /* رنگ اصلی اینستاگرام را نشان می‌دهد */
+    opacity: 1;
+}
+
+/* درخشش مخصوص تلگرام */
+.social-icon.telegram:hover {
+    border-color: #0088cc;
+    box-shadow: 0 0 15px rgba(0, 136, 204, 0.5);
+}
+.social-icon.telegram:hover img {
+    filter: none; /* رنگ اصلی تلگرام را نشان می‌دهد */
+    opacity: 1;
+}
